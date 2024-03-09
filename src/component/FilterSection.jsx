@@ -453,19 +453,7 @@ const FilterSection = () => {
             </div>
           </div>
 
-          {/* <div className="sect-dvr">
-                        <h4 className="subhding">Niches</h4>
-                        {
-                            niches &&
-                            niches.map(niche =>
-                                <div className="form-check  custom-control custom-checkbox">
-                                    <input className="form-check-input" type="checkbox" value={niche} id={niche} />
-                                    <label className="form-check-label" htmlFor={niche}>
-                                        {niche}
-                                    </label>
-                                </div>)
-                        }
-                    </div> */}
+      
         </div>
       </div>
     </div>

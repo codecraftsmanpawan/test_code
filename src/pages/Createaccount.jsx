@@ -96,35 +96,7 @@ const Createaccount = () => {
     }
   };
 
-  // making api call?
-
-  // const GoogleLogin = useGoogleLogin({
-  //   onSuccess: tokenResponse => {
-
-  //     console.log(tokenResponse);
-  //     try {
-  //       axios.post(`http://localhost:9090/user/googleAuthenticate`, {
-  //         authorizationCode: tokenResponse.access_token,
-  //         role: "ROLE_BRAND"
-  //       }, {
-  //         headers: {
-  //           'Content-Type': 'application/json',
-  //           'Authorization': 'Bearer '
-  //         },
-  //       })
-  //         .then((response) => console.log(response))
-  //       navigate("/createcampaign")
-  //     } catch (error) {
-  //       console.log(error);
-
-  //     }
-  //   }
-
-  // });
-
-  // const handleCallBack = (response) => {
-  //   console.log(response.credential);
-  // };
+  
   return (
     <div>
       <section className="login-wrapper">

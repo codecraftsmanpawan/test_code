@@ -5,6 +5,7 @@ import AdminSidebar from "../../../components/AdminSidebar";
 import {Link} from "react-router-dom";
 import {toast} from "react-toastify";
 import { parseJwt } from "../../../../utils/common";
+import { baseURL } from "../../../../hooks/config";
 const CreateCampaignAdmin = () => {
   const token = JSON.parse(localStorage.getItem("accessToken"));
   const data = parseJwt(token);
@@ -141,7 +142,7 @@ const CreateCampaignAdmin = () => {
         redirect: "follow",
       };
 
-      const apiUrl = "http://localhost:9090/campaign";
+      const apiUrl = `${baseURL}/campaign`;
 
       const response = await fetch(apiUrl, requestOptions);
 

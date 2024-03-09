@@ -28,7 +28,7 @@ const InfluencerDiscoverCampaign = () => {
         };
 
         const response = await fetch(
-          "http://localhost:9090/influencer",
+          `${baseURL}/influencer`,
           requestOptions
         );
         const result = await response.json();

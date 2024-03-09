@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useReducer, useEffect, useState } from 'react'
 import typeReducer from './typeReducer'
 import GetInfluencers from '../GetDataFunctions/GetInfluencers'
+import { baseURL } from './config'
 
 
 const TypeContext = createContext()
@@ -8,7 +9,7 @@ const TypeProvider = ({ children }) => {
 
 
 
-    const influencers = GetInfluencers("http://localhost:9090/restricted/influencers")
+    const influencers = GetInfluencers(`${baseURL}/restricted/influencers`)
 
     useEffect(() => {
         influencers?.data &&
